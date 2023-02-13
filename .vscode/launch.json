@@ -1,0 +1,224 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Aml",
+            "request": "launch",
+            "mainClass": "com.example.Aml",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch riskmitigation",
+            "request": "launch",
+            "mainClass": "com.example.riskmitigation",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch android",
+            "request": "launch",
+            "mainClass": "com.example.android",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Platforms",
+            "request": "launch",
+            "mainClass": "com.example.Platforms",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch POSsettlement",
+            "request": "launch",
+            "mainClass": "com.example.POSsettlement",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exchangerates",
+            "request": "launch",
+            "mainClass": "com.example.Exchangerates",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch TransferChanges",
+            "request": "launch",
+            "mainClass": "com.example.TransferChanges",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Currencies",
+            "request": "launch",
+            "mainClass": "com.example.Currencies",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch WorkFLowofBroadex",
+            "request": "launch",
+            "mainClass": "com.example.WorkFLowofBroadex",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Country",
+            "request": "launch",
+            "mainClass": "com.example.Country",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Continents",
+            "request": "launch",
+            "mainClass": "com.example.Continents",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccessRole",
+            "request": "launch",
+            "mainClass": "com.example.AccessRole",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Advancedfilterorder",
+            "request": "launch",
+            "mainClass": "com.example.Advancedfilterorder",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Analytics",
+            "request": "launch",
+            "mainClass": "com.example.Analytics",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConsoleUser",
+            "request": "launch",
+            "mainClass": "com.example.ConsoleUser",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomerDocuments",
+            "request": "launch",
+            "mainClass": "com.example.CustomerDocuments",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomerLoginlog",
+            "request": "launch",
+            "mainClass": "com.example.CustomerLoginlog",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Customers",
+            "request": "launch",
+            "mainClass": "com.example.Customers",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch DocumentVerify",
+            "request": "launch",
+            "mainClass": "com.example.DocumentVerify",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Earningsstatementandcommissionsettlement",
+            "request": "launch",
+            "mainClass": "com.example.Earningsstatementandcommissionsettlement",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loginconsole",
+            "request": "launch",
+            "mainClass": "com.example.Loginconsole",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch OrderSortExport",
+            "request": "launch",
+            "mainClass": "com.example.OrderSortExport",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Refund",
+            "request": "launch",
+            "mainClass": "com.example.Refund",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch aaaa",
+            "request": "launch",
+            "mainClass": "com.example.aaaa",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch demo",
+            "request": "launch",
+            "mainClass": "com.example.demo",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch ermiupload",
+            "request": "launch",
+            "mainClass": "com.example.ermiupload",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch headercheck",
+            "request": "launch",
+            "mainClass": "com.example.headercheck",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch login",
+            "request": "launch",
+            "mainClass": "com.example.login",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch order",
+            "request": "launch",
+            "mainClass": "com.example.order",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch order1",
+            "request": "launch",
+            "mainClass": "com.example.order1",
+            "projectName": "demo"
+        }
+    ]
+}

@@ -20,7 +20,7 @@ public class headercheck {
     public static void main(String[] args) {
        //WebDriver.chromedriver();
         WebDriver Driver =new ChromeDriver();
-        Driver.get("https://f2d3-122-163-122-32.ngrok.io/");
+        Driver.get("https://ccec-122-163-122-32.ngrok.io/");
         Driver.manage().window().maximize();
 
         Driver.findElement(By.id("username")).sendKeys("super.admin");
@@ -34,16 +34,18 @@ public class headercheck {
         {
             System.out.println("Successfully Installed");
         }
-        Driver.navigate().to("http://f2d3-122-163-122-32.ngrok.io/user-login-logs/me");
-        Driver.navigate().to("https://f2d3-122-163-122-32.ngrok.io/user-login-logs/me");
+        Driver.navigate().to("https://ccec-122-163-122-32.ngrok.io/user-login-logs/me");
+        //Driver.navigate().to("https://ccec-122-163-122-32.ngrok.io/user-login-logs/me");
         Driver.findElement(By.id("date-range")).click();
 
         WebElement element = Driver.findElement(By.id("date-range"));
         Actions actions = new Actions(Driver);
         actions.moveToElement(element).click(element).sendKeys("31/12/2022-03/01/2023").doubleClick(element).contextClick(element).build().perform();
-        Driver.findElement(By.xpath("(//*[@class='btn btn-outline-light border text-dark'])")).click();
+        Driver.findElement(By.xpath("(//*[@class='mdi mdi-magnify'])")).click();
 
+        Driver.findElement(By.xpath("(//*[@class='btn btn-outline-light border text-dark'])")).click();
         Driver.findElement(By.xpath("(//*[@class='menu-icon mdi mdi-logout'])")).click();
+        Driver.quit();
         if(actualtext.equals("You've successfully logged out."))
         {
             System.out.println("matched");

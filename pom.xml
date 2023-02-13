@@ -7,6 +7,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <aspectj.version>1.8.10</aspectj.version>
     <junit.version>5.6.0</junit.version>
     <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
     <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
@@ -21,6 +22,7 @@
     <jacoco.unit-tests.limit.method-complexity>5</jacoco.unit-tests.limit.method-complexity>
   </properties>
   <dependencies>
+    
 
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -46,14 +48,70 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.10.1</version>
+</dependency>
+ <dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.20.1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M8</version>
+</dependency>
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.9.19</version>
+    <scope>runtime</scope>
+</dependency>
+    <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.7.1</version>
     <scope>test</scope>
 </dependency>
+  
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.0.0</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>2.20</version>
+      <configuration>
+        <suiteXmlFiles>
+        <suiteXmlFile><testng class="xml"></testng></suiteXmlFile>
+        </suiteXmlFiles>
+      </configuration>
+      <settings>
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://myserver:9000
+                </sonar.host.url>
+            </properties>
+        </profile>
+     </profiles>
+</settings>
+    </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -84,6 +142,13 @@
             <artifactId>checkstyle</artifactId>
             <version>${checkstyle.version}</version>
           </dependency>
+          <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.9.2</version>
+    <scope>test</scope>
+</dependency>
+
           <dependency>
             <groupId>com.github.ngeor</groupId>
             <artifactId>checkstyle-rules</artifactId>
@@ -180,4 +245,6 @@
       </plugin>
     </plugins>
   </reporting>
+  
 </project>
+

@@ -7,7 +7,7 @@ public class Loginconsole {
     public static void main(String[] args) {
        //WebDriver.chromedriver();
         WebDriver Driver =new ChromeDriver();
-        Driver.get("https://f2d3-122-163-122-32.ngrok.io/");
+        Driver.get("https://ccec-122-163-122-32.ngrok.io/");
         Driver.manage().window().maximize();
 
         Driver.findElement(By.id("username")).sendKeys("super.admin");
@@ -17,6 +17,7 @@ public class Loginconsole {
         //Driver.findElement(By.id("password")).sendKeys("Secret1");
 
         Driver.findElement(By.xpath("(//*[@class='btn btn-primary submit-btn btn-block'])")).click();
+        Driver.quit();
         if(Driver.findElement(By.xpath("(//*[@class='container-scroller'])")).isDisplayed());
         {
             System.out.println("Successfully Installed");
