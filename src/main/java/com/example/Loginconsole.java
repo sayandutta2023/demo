@@ -7,7 +7,7 @@ public class Loginconsole {
     public static void main(String[] args) {
        //WebDriver.chromedriver();
         WebDriver Driver =new ChromeDriver();
-        Driver.get("https://ccec-122-163-122-32.ngrok.io/");
+        Driver.get("https://e336-122-163-122-32.ngrok.io/");
         Driver.manage().window().maximize();
 
         Driver.findElement(By.id("username")).sendKeys("super.admin");

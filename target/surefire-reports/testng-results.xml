@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-16T16:14:35 IST" name="Surefire suite" finished-at="2023-02-16T16:17:33 IST" duration-ms="178157">
+    <groups>
+    </groups>
+    <test started-at="2023-02-16T16:14:35 IST" name="Surefire test" finished-at="2023-02-16T16:17:33 IST" duration-ms="178157">
+      <class name="com.example.orderTest">
+        <test-method signature="test()" started-at="2023-02-16T16:16:22 IST" name="test" finished-at="2023-02-16T16:16:52 IST" duration-ms="30320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.example.orderTest -->
+      <class name="com.example.RefundTest">
+        <test-method signature="test()" started-at="2023-02-16T16:16:52 IST" name="test" finished-at="2023-02-16T16:17:33 IST" duration-ms="40896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.example.RefundTest -->
+      <class name="com.example.ermiuploadTest">
+        <test-method signature="test()" started-at="2023-02-16T16:14:35 IST" name="test" finished-at="2023-02-16T16:15:04 IST" duration-ms="28802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.example.ermiuploadTest -->
+      <class name="com.example.order1Test">
+        <test-method signature="test() throws java.lang.InterruptedException" started-at="2023-02-16T16:15:19 IST" name="test" finished-at="2023-02-16T16:16:22 IST" duration-ms="62433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.example.order1Test -->
+      <class name="com.example.LoginconsoleTest">
+        <test-method signature="test()" started-at="2023-02-16T16:15:04 IST" name="test" finished-at="2023-02-16T16:15:19 IST" duration-ms="15622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.example.LoginconsoleTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

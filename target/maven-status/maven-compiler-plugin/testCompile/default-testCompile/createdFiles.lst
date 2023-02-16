@@ -1,1 +1,5 @@
-com\example\AppTest.class
+com\example\LoginconsoleTest.class
+com\example\order1Test.class
+com\example\ermiuploadTest.class
+com\example\orderTest.class
+com\example\RefundTest.class

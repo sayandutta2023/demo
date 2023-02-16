@@ -9,7 +9,7 @@ public class ermiupload {
     public static void main(String[] args) {
         
          WebDriver Driver =new ChromeDriver();
-         Driver.get("http://ccec-122-163-122-32.ngrok.io/");
+         Driver.get("http://e336-122-163-122-32.ngrok.io/");
          Driver.manage().window().maximize();
 
          Driver.findElement(By.id("username")).sendKeys("super.admin");
